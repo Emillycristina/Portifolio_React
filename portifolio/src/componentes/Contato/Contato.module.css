@@ -1,0 +1,70 @@
+@import "../../App.css";
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+   
+}
+
+.row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    padding: 100px;
+    margin-left: 400px;
+    
+    
+}
+.emilly{
+  width: 200px;
+  margin-top: -60px;
+}
+
+.header{
+  width: 350px;
+  height: 30px;
+  background-color: rgb(162, 51, 199);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.card {
+ 
+    box-shadow: 7px 7px 13px 0px rgb(255, 255, 255, 0.10);
+    /* padding: 30px; */
+    width: 350px;
+    height: 250px;
+    margin-left: -5px;
+    margin-right: -5px;
+    transition: all 0.3s ease-out;
+    background-image:  url('../../assets/fundo.jpg'); 
+    border-radius: 10px;
+    
+
+    
+}
+
+.caixa{
+    margin-top: 50px;
+    margin-right: 60px;
+    float: right;
+}
+
+.linkedin{
+    font-size: 30px;
+}
+
+.github{
+    font-size:30px
+}
+
+.texto1{
+    font-size: 12px;
+}
+
+.texto2{
+    font-size: 12px;
+}

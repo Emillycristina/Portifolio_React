@@ -1,0 +1,52 @@
+@import "../../App.css";
+
+
+.row{
+    display: flex;
+    height: 100%;
+}
+.mao{
+    width: 15px;
+}
+.texto1{
+ margin-top: 250px;
+ font-size: 18px;
+
+ 
+
+}
+
+.foguete{
+ width: 30px;
+}
+
+.emilly{
+    float:right;
+    margin-left: 120px;
+}
+
+.row2{
+flex: 1;
+align-items: flex-end;
+}
+
+.row1{
+flex: 1;
+margin-top: -30px;
+}
+
+.texto2{
+    font-size: 14px;
+    
+}
+
+.rosa{
+color: rgb(162, 51, 199); 
+
+}
+
+
+
+
+
+

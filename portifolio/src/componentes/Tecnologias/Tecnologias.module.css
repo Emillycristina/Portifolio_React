@@ -1,0 +1,49 @@
+@import "../../App.css";
+
+
+.container {
+    display: flex;
+    height: 100%;
+    
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 80px;
+    margin-left: 200px;
+    padding: 100px;
+    
+    
+   
+}
+
+
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgb(255, 255, 255, 0.10);
+    padding: 30px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease-out;
+    /* border:solid 2px rgb(162, 51, 199);  */
+    background-image:  url('../../assets/fundo.jpg');
+    border-radius: 50px;
+    
+
+    
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    
+}
+
+.icons{
+    width: 45px;
+}

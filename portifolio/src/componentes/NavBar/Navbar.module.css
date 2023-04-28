@@ -1,0 +1,112 @@
+@import "../../App.css";
+
+
+.linkhome{
+
+color:white;
+text-decoration: none ;
+font-size: 13px;
+transition: 0.3s ;
+   
+}
+
+.linkprojeto{
+    
+color: white;
+text-decoration: none ;
+font-size: 13px;
+transition: 0.3s ;
+       
+ }
+
+ .linkcontato{
+
+color: white ;
+text-decoration: none ;
+font-size: 13px;
+transition: 0.3s ;
+               
+ }
+
+ .linkhome:hover{
+    background-color: rebeccapurple;
+    width: 30px;
+    height: 40px;
+ }
+ .linkprojeto:hover{
+    background-color: rebeccapurple;
+    
+ }
+ .linkcontato:hover{
+    background-color: rebeccapurple;
+   
+ }
+
+ .link {
+    margin: 0 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white; /* Defina a cor do texto como branco */
+  }
+
+.nav {
+display: flex;
+color: white;
+justify-content: space-between;
+align-items: center;
+background-image: url('../../assets/fundo.jpg') ;
+height: 8vh;
+width: 100%;
+position: fixed;
+top: 0;
+
+    
+}
+
+.menu div {
+width: 30px;
+height: 2px;
+color: white;
+padding: 16px;
+list-style: none;
+display: flex;
+}
+
+
+.navlist li :hover {
+    background:  rgb(162, 51, 199);
+    border-radius: 50px;
+
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    transition: all 0.3s ease-out;
+    
+}
+
+.navlist li {
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+      }
+    
+      .navlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+   
+   
+
+}
