@@ -17,6 +17,12 @@
     
     
 }
+
+.redes{
+ 
+ font-size: 15px ;
+}
+
 .emilly{
   width: 200px;
   margin-top: -60px;
@@ -24,10 +30,14 @@
 
 .header{
   width: 350px;
-  height: 30px;
-  background-color: rgb(162, 51, 199);
+  height: 40px;
+  background-image: rgba(36, 2, 36, 0.5);
+  backdrop-filter: blur(8px);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  text-align: center;
+  padding-top: 1px;
+
 }
 
 
@@ -48,9 +58,12 @@
 }
 
 .caixa{
-    margin-top: 50px;
-    margin-right: 60px;
+    
+    margin-top: -270px;
+    margin-right: 40px; 
     float: right;
+    
+    
 }
 
 .linkedin{
@@ -62,9 +75,28 @@
 }
 
 .texto1{
-    font-size: 12px;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .texto2{
-    font-size: 12px;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.email{
+  font-size:30px;
+  margin-left: 10px;
+}
+ 
+
+.texto3{
+    color: white;
+    font-size: 10px;
+    margin-left: 40px;
+    margin-top: -22px;
 }

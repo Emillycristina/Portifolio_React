@@ -6,6 +6,7 @@ import {RiInstagramFill, RiScales2Fill} from "react-icons/ri";
 
 
 
+
 export default function Principal(){
   const [repos, setRepos] = useState([]); 
 
@@ -36,11 +37,11 @@ export default function Principal(){
         <BsCalculator className={styles.calculadora}/>
         </div>
       )}
-      {repos[2] && (
+      {repos[8] && (
       <div className={styles.card}>
-        <h5>{repos[2].name}</h5>
+        <h4>{repos[8].name}</h4>
         {/* <p>{repos[2].url}</p> */}
-        <RiInstagramFill  className={styles.instagram}/>
+        <RiScales2Fill className={styles.balanca}/>
       </div>
       )}
       {repos[3] && (
@@ -57,11 +58,12 @@ export default function Principal(){
        <BsFillShieldLockFill className={styles.cadeado}/>
       </div>
       )}
-      {repos[8] && (
+      {repos[2] && (
       <div className={styles.cardlateral}>
-        <h4>{repos[8].name}</h4>
+        <h4>{repos[2].name}</h4>
         {/* <p>{repos[8].url}</p> */}
-        <RiScales2Fill className={styles.balanca}/>
+        <RiInstagramFill  className={styles.instagram}/>
+        
       </div>
       )}
       <div>
