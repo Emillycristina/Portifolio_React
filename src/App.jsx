@@ -2,7 +2,7 @@ import { useState } from 'react'
 import NavBar from './componentes/NavBar/Navbar';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import './App.css';
-import Main from './Pages/Main';
+import Main from './pages/Main';
 import Principal from './componentes/Principal/Principal';
 import Primeiro from './componentes/Primeiro/Primeiro';
 import Tecnologias from './componentes/Tecnologias/Tecnologias';
