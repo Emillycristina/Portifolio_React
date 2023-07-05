@@ -12,12 +12,23 @@
     display: flex;
     flex-direction: row;
     margin-top: 80px;
-    padding: 100px;
-    margin-left: 400px;
+    padding: 10px;
+    
+    
+    
+  
     
     
 }
 
+.row2{
+    flex:1;
+    align-items: center;
+    margin-right: 100px;
+    
+    
+    
+}
 .redes{
  
  font-size: 15px ;
@@ -50,53 +61,44 @@
     margin-left: -5px;
     margin-right: -5px;
     transition: all 0.3s ease-out;
-    background-image:  url('../../assets/fundo.jpg'); 
+    background-image:  url('../../assets/noite.jpg');
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     
 
     
 }
 
-.caixa{
+.Emilly{
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    margin-bottom: 30px;
     
-    margin-top: -270px;
-    margin-right: 40px; 
-    float: right;
-    
-    
 }
 
-.linkedin{
-    font-size: 30px;
+.paragrafo{
+    font-size: 12px;
+    margin-top: 10px;
 }
 
-.github{
-    font-size:30px
+.button{
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #ab47bc;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin-top: 10px;
 }
 
-.texto1{
-    font-size: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
+.button:hover{
+    transform: translateY(-5px);
 }
 
-.texto2{
-    font-size: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-}
-
-.email{
-  font-size:30px;
-  margin-left: 10px;
-}
- 
-
-.texto3{
-    color: white;
-    font-size: 10px;
-    margin-left: 40px;
-    margin-top: -22px;
+@media screen and (max-width: 700px) {
+    .row{
+        margin-left: 60px ;
+    }
 }

@@ -47,6 +47,10 @@ color: rgb(162, 51, 199);
 
 
 
-
+@media screen and (max-width: 700px) {
+    .emilly{
+        margin-left: 2px ;
+    }
+}
 
 

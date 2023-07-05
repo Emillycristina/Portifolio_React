@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import {AiFillGithub } from "react-icons/ai";
+import {FaLinkedinIn} from "react-icons/fa";
+//import { MdEmail } from "react-icons/md";
 
 
 
@@ -29,9 +32,19 @@ return (
           </Link>
         </li>
         <li className={styles.link}>
-          <Link to="/Contato" className={styles.linkcontato}>
-          CONTATO
+          <Link to="/Projetos" className={styles.linkprojeto}>
+          TECNOLOGIAS
           </Link>
+        </li>
+        <li className={styles.link}>
+          <Link to="/Projetos" className={styles.linkprojeto}>
+          QUEM SOU EU?
+          </Link>
+        </li>
+        <li className={styles.link}>
+        <FaLinkedinIn className={styles.linkedin}/><Link to="https://www.linkedin.com/in/emilly-finco/"></Link>
+        <AiFillGithub className={styles.github}/><Link to="https://github.com/Emillycristina"></Link>
+        
         </li>
        </ul>
     </nav>
