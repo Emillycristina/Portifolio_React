@@ -4,13 +4,12 @@
     display: flex;
     color: white;
     text-align: center;
-    background-image: url('../../assets/fundo.jpg') ; 
-    filter: blur(0.8px);
-    height: 8vh;
-    width: 100%;
+    background-image: url('../../assets/rodape.png') ;
+    background-size: cover; 
+    width: 100vh;
     bottom: 0;
     justify-content: center;
-    
+
 
 }
 

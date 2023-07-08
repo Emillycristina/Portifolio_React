@@ -8,7 +8,7 @@ import {RiInstagramFill, RiScales2Fill} from "react-icons/ri";
 import styles from './Principal.module.css';
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#ab47bc',
+  backgroundColor: '#8c2f9e',
   padding: theme.spacing(5),
   textAlign: 'center',
   color: '#fff',
@@ -17,7 +17,6 @@ const Item = styled(Paper)(({ theme }) => ({
   backgroundPosition: 'center',
   
 }));
-
 
 
 
@@ -39,8 +38,8 @@ export default function Principal() {
 
   return (
     
-    <Box sx={{ flexGrow: 1 }} style={{padding:"10px", textAlign:"center", marginBottom:"10px"}}>
-      <h2 style={{marginBottom:"20px"}}> PROJETOS </h2>
+    <Box sx={{ flexGrow: 1 }} className={styles.container}  style={{padding:"40px", textAlign:"center", marginBottom:"10px"}}>
+      {/* <h2 style={{marginRight:"20px"}}> PROJETOS </h2> */}
       <Grid container spacing={2}>
         <Grid item xs={6} sm={3}>
           {repos[1] && (

@@ -3,7 +3,10 @@
 .container {
     display: flex;
     height: 100%;
-    align-items: center;
+    background-image: url('../../assets/fundo2.jpg');
+    background-size: cover;
+    border: none;
+    
    
 
 }
