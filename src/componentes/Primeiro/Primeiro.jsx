@@ -1,27 +1,74 @@
-import styles from './Primeiro.module.css';
-import Emilly from '../../assets/Emilly2.png'
-import mao from '../../assets/mao-acenando.png'
-import laço from '../../assets/laço.png'
-import foguete from  '../../assets/rocket.png'
+import React from 'react';
+import { styled } from '@mui/system';
+import Emilly from '../../assets/Emilly2.png';
+import mao from '../../assets/mao-acenando.png';
+import foguete from '../../assets/rocket.png';
+import { Typography } from '@mui/material';
 
-export default function Primeiro(){
+const Container = styled('div')({
+  display: 'flex',
+  height: '100%',
+  alignItems: 'center',
+});
 
+const TextContainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  
+});
 
+const Image = styled('img')({
+  float: 'right',
+  marginLeft: '120px',
+  maxWidth: '100%',
+  '@media (max-width: 700px)': {
+    marginLeft: '2px',
+  },
+  
+});
 
-    return (
-       
-      <div className={styles.row}>
-        <div className={styles.row1}>
-        <img src={Emilly} alt="Emilly" className={styles.emilly}/>
-        </div>
-        
-        
-        <div className={styles.row2}>
-        <p className={styles.texto1}>OLÁ<img src={mao} alt="Mão" className={styles.mao}/>,MEU NOME É <p className={styles.rosa}>EMILLY</p>  </p>
-        <p className={styles.texto2}>DESENVOLVEDORA FRONT-END.</p><img src={foguete} alt="Foguete" className={styles.foguete}/>
-        </div>
+const Text = styled(Typography)(({ theme }) => ({
+  marginTop: '250px',
+  fontSize: '18px',
+  color: "#FFF",
+  '@media (max-width: 700px)': {
+    marginTop: '0',
+    fontSize: '14px',
+  },
+}));
 
-        <img src={laço} alt="laço" className={styles.laço}/>
+const SmallText = styled(Typography)(({ theme }) => ({
+  fontSize: '14px',
+  color: "#FFF",
+}));
+
+const PinkText = styled('span')({
+  color: '#a233c7',
+});
+
+const SmallImage = styled('img')({
+  width: '30px',
+});
+
+const SmallHandImage = styled('img')({
+  width: '15px',
+});
+
+export default function Primeiro() {
+  return (
+    <Container>
+      <div>
+        <Image src={Emilly} alt="Emilly" />
       </div>
-  )
+      <TextContainer>
+        <Text>
+          OLÁ <SmallHandImage src={mao} alt="Mão" />, MEU NOME É <PinkText>EMILLY</PinkText>
+        </Text>
+        <SmallText>DESENVOLVEDORA FRONT-END.</SmallText>
+        <div>
+          <SmallImage src={foguete} alt="Foguete" />
+        </div>
+      </TextContainer>
+    </Container>
+  );
 }

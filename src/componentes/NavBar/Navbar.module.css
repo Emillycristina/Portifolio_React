@@ -1,94 +1,42 @@
 @import "../../App.css";
 
 
-.linkhome{
 
-color:white;
-text-decoration: none ;
-font-size: 10px;
-transition: 0.3s ;
-   
-}
-
-.linkprojeto{
-    
-color: white;
-text-decoration: none ;
-font-size: 10px;
-transition: 0.3s ;
-       
- }
-
- .linkcontato{
-
-color: white ;
-text-decoration: none ;
-font-size: 10px;
-transition: 0.3s ;
-               
- }
-
-
-
- .link {
-    margin: 0 10px;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: white; /* Defina a cor do texto como branco */
-  }
-
-.nav {
-display: flex;
-color: white;
-justify-content: space-between;
-align-items: center;
-background-color: rgb(0, 0, 0, 0.5) ;
-backdrop-filter: blur(10px);
-height: 8vh;
-width: 100%;
-position: fixed;
-top: 0;
-
-    
-}
-
-.menu div {
-width: 30px;
-height: 2px;
-color: white;
-padding: 16px;
-list-style: none;
-display: flex;
-}
-
-
-.navlist li :hover {
-    
+.home:hover{
+   color:purple;
    transform: translateY(-5px);
-   width: 30px;
-   height: 20px;
-
 }
 
-.navlist {
-    display: flex;
-    list-style: none;
-    transition: all 0.3s ease-out;
-    
+.projetos:hover{
+   color:purple;
+   transform: translateY(-5px);
 }
 
-.navlist li {
-    margin-right: 100px;
-    cursor: pointer;
+.tecnologias:hover{
+   color:purple;
+   transform: translateY(-5px);
 }
 
+.quem:hover{
+   color:purple;
+   transform: translateY(-5px);
+}
 
 .github{
-   margin-left: 10px;
+   margin-left: 5px;
    width: 50px;
+}
+
+.github:hover{
+   color: purple;
+   transform: translateY(-5px);
 }
 
 .linkedin{
    width: 50px;
+}
+
+.linkedin:hover{
+   color: orange;
+   transform: translateY(-5px);
 }

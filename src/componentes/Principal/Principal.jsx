@@ -8,13 +8,14 @@ import {RiInstagramFill, RiScales2Fill} from "react-icons/ri";
 import styles from './Principal.module.css';
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#8c2f9e',
+  backgroundColor: '#000',
   padding: theme.spacing(5),
   textAlign: 'center',
   color: '#fff',
   backgroundImage: 'url(path/to/image.jpg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
+  opacity: "0.3",
   
 }));
 

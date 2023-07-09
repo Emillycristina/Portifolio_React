@@ -2,6 +2,7 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import styles from './Tecnologias.module.css';
+import videoBackground from "../../assets/Video.mp4";
 
 
 import JavaScript from '../../assets/JavaScript.svg';
@@ -33,7 +34,9 @@ export default function Tecnologias() {
 
   return (
     <div className={styles.container}>
-      
+     <video autoPlay loop muted className={styles.video}>
+        <source src={videoBackground} type="video/mp4" />
+    </video>
       <AliceCarousel
         mouseTracking
         items={renderTechnologies()}
