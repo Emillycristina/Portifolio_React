@@ -5,8 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import MenuIcon from '@mui/icons-material/Menu';
 import styles from './Navbar.module.css';
-/* import {Tecnologias} from '../Tecnologias/Tecnologias';
-import {Projetos} from '../Principal/Principal'; */
+
 
 export default function NavBar() {
   const theme = useTheme();
@@ -22,16 +21,16 @@ export default function NavBar() {
     return (
       <List>
         <ListItem  component={Link} to="/" onClick={toggleDrawer}>
-          <ListItemText primary="HOME" />
+          <ListItemText secondary="HOME" style={{ color: "#fff", textDecoration: "none", cursor:"pointer"}} />
         </ListItem>
-        <ListItem  component={Link} to="/" onClick={toggleDrawer}>
-          <ListItemText primary="PROJETOS" />
+        <ListItem  component={Link} to="/principal" onClick={toggleDrawer}>
+          <ListItemText secondary="PROJETOS" style={{ textDecoration: "none", cursor:"pointer"}} />
         </ListItem>
-        <ListItem  component={Link} to="/" onClick={toggleDrawer}>
-          <ListItemText primary="TECNOLOGIAS" />
+        <ListItem  component={Link} to="/tecnologias" onClick={toggleDrawer}>
+          <ListItemText secondary="TECNOLOGIAS" style={{ textDecoration: "none", cursor:"pointer"}} />
         </ListItem>
-        <ListItem button component={Link} to="/" onClick={toggleDrawer}>
-          <ListItemText primary="QUEM SOU EU?" />
+        <ListItem component={Link} to="/contato" onClick={toggleDrawer}>
+          <ListItemText secondary="QUEM SOU EU?" style={{ textDecoration: "none", cursor:"pointer"}} />
         </ListItem>
       </List>
     );
@@ -49,23 +48,23 @@ export default function NavBar() {
             </IconButton>
           ) : (
             <>
-              <Typography variant="body2" component="div" sx={{ flexGrow: 1 }}>
-                <Link to="/" style={{ color: "#fff", textDecoration: "none" }} className={styles.home}>
+              <Typography variant="body2" component={Link} to="/" sx={{ flexGrow: 1 }}>
+                <Link to="/" style={{ color: "#fff", textDecoration: "none", cursor:"pointer"}} className={styles.home}>
                   HOME
                 </Link>
               </Typography>
-              <Typography variant="body2" component="div" sx={{ flexGrow: 1 }}>
-                <Link to="/projetos" style={{ color: "#fff", textDecoration: "none" }} className={styles.projetos}>
+              <Typography variant="body2" component={Link}  sx={{ flexGrow: 1 }}>
+                <Link to="/principal" style={{ color: "#fff", textDecoration: "none", cursor:"pointer" }} className={styles.projetos}>
                   PROJETOS
                 </Link>
               </Typography>
-              <Typography variant="body2" component="div" sx={{ flexGrow: 1 }}>
-                <Link to="/tecnologias" style={{ color: "#fff", textDecoration: "none" }} className={styles.tecnologias}>
+              <Typography variant="body2" component={Link} to="/tecnologias" sx={{ flexGrow: 1 }}>
+                <Link to="/tecnologias" style={{ color: "#fff", textDecoration: "none", cursor:"pointer" }} className={styles.tecnologias}>
                   TECNOLOGIAS
                 </Link>
               </Typography>
-              <Typography variant="body2" component="div" sx={{ flexGrow: 1 }}>
-                <Link to="/quem-sou-eu" style={{ color: "#fff", textDecoration: "none" }} className={styles.quem}>
+              <Typography variant="body2" component={Link}  sx={{ flexGrow: 1 }}>
+                <Link to="/contato" style={{ color: "#fff", textDecoration: "none", cursor:"pointer" }} className={styles.quem}>
                   QUEM SOU EU?
                 </Link>
               </Typography>

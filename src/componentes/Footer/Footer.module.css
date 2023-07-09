@@ -4,11 +4,12 @@
     display: flex;
     color: white;
     text-align: center;
-    background-image: url('../../assets/rodape.png') ;
-    background-size: cover; 
-    width: 100vh;
-    bottom: 0;
     justify-content: center;
+    background-color: #7806d6 ;
+    background-size: cover; 
+    width: 100%;
+    bottom: 0;
+    
 
 
 }
@@ -17,7 +18,7 @@
     color: white;
     font-size: 9px;
     bottom: 0;
-    position: fixed;
+    
    
     
 }
